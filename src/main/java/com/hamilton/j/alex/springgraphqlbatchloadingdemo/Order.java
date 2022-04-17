@@ -2,6 +2,7 @@ package com.hamilton.j.alex.springgraphqlbatchloadingdemo;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.StringJoiner;
 
 @Entity
 @Table(name = "orders")
@@ -41,4 +42,11 @@ public class Order {
         this.customer = customer;
     }
 
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Order.class.getSimpleName() + "[", "]")
+                .add("id=" + id)
+                .add("orderDate=" + orderDate)
+                .toString();
+    }
 }

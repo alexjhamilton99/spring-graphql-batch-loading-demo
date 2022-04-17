@@ -5,6 +5,7 @@ import com.hamilton.j.alex.springgraphqlbatchloadingdemo.Order;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringJoiner;
 
 @Entity
 @Table(name = "customers")
@@ -43,4 +44,11 @@ public class Customer {
         this.orders = orders;
     }
 
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Customer.class.getSimpleName() + "[", "]")
+                .add("id=" + id)
+                .add("name='" + name + "'")
+                .toString();
+    }
 }
