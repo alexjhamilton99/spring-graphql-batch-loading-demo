@@ -1,0 +1,18 @@
+# scalar Date
+
+type Query {
+    allCustomers: [Customer!]
+}
+
+type Customer {
+    id: ID!
+    name: String
+    orders: [Order!]
+}
+
+type Order {
+    id: ID!
+    order_date: String
+    # order_date: Date
+    customer: Customer
+}
