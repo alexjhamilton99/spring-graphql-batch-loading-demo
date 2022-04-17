@@ -1,4 +1,4 @@
-# scalar Date
+scalar Date
 
 type Query {
     allCustomers: [Customer!]
@@ -12,7 +12,6 @@ type Customer {
 
 type Order {
     id: ID!
-    order_date: String
-    # order_date: Date
+    order_date: Date
     customer: Customer
 }
