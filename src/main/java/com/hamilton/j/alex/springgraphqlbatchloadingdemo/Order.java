@@ -2,9 +2,9 @@ package com.hamilton.j.alex.springgraphqlbatchloadingdemo;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
+@Table(name = "orders")
 public class Order {
 
     @Id
