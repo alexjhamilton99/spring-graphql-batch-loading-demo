@@ -39,7 +39,7 @@ public class DataSourceQueryLoggingPostProcessor implements BeanPostProcessor {
         private ProxyDataSourceInterceptor(final DataSource dataSource) {
             this.dataSource = ProxyDataSourceBuilder
                     .create(dataSource)
-                    .name("Kanban Database")
+                    .name("Demo Database")
                     .multiline()
                     .logQueryBySlf4j(SLF4JLogLevel.INFO)
                     .build();

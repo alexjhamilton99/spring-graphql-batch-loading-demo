@@ -12,6 +12,6 @@ type Customer {
 
 type Order {
     id: ID!
-    order_date: Date
+    orderDate: Date
     customer: Customer
 }
