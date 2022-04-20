@@ -7,7 +7,7 @@ type Query {
 type Customer {
     id: ID!
     name: String
-    orders: [Order!]
+    orders: [Order!] # batched field
 }
 
 type Order {
