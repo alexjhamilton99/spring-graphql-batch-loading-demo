@@ -47,6 +47,7 @@ public class Order {
         return new StringJoiner(", ", Order.class.getSimpleName() + "[", "]")
                 .add("id=" + id)
                 .add("orderDate=" + orderDate)
+                .add("customer=" + customer.getId())
                 .toString();
     }
 }

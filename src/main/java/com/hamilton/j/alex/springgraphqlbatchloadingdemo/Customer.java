@@ -1,7 +1,5 @@
 package com.hamilton.j.alex.springgraphqlbatchloadingdemo;
 
-import com.hamilton.j.alex.springgraphqlbatchloadingdemo.Order;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
